@@ -18,21 +18,21 @@ export default function MainSection() {
               </p>
             </div>
           </div>
-          <div className="flex justify-center items-center flex-wrap gap-8">
+          <div className="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
             <SocialCard
-              href="https://www.instagram.com/fuyofulo"
+              href="https://www.instagram.com/yourusername"
               icon={InstagramIcon}
               title="Instagram"
             />
             <SocialCard
-              href="https://www.linkedin.com/in/fuyofulo"
+              href="https://www.linkedin.com/in/yourusername"
               icon={LinkedInIcon}
               title="LinkedIn"
             />
             <SocialCard
-              href="https://X.com/fuyofulo"
+              href="https://twitter.com/yourusername"
               icon={TwitterIcon}
-              title="X"
+              title="Twitter"
             />
           </div>
         </div>
