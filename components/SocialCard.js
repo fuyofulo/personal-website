@@ -1,12 +1,27 @@
-import Link from "next/link";
+import SocialCard from "./SocialCard";
 
-export default function SocialCard({ href, icon: Icon, title }) {
+export default function Socials() {
+  const socialLinks = [
+    { platform: "Instagram", url: "https://www.instagram.com/fuyofulo", imageSrc: "/instagram.svg" },
+    { platform: "LinkedIn", url: "https://www.linkedin.com/in/fuyofulo", imageSrc: "/linkedin.svg" },
+    { platform: "X", url: "https://www.x.com/fuyofulo", imageSrc: "/x.svg" },
+  ];
+
   return (
-    <Link href={href} prefetch={false}>
-      <div className="flex items-center space-x-2 p-4 border border-muted rounded-lg hover:bg-muted transition-colors">
-        <Icon className="w-6 h-6" />
-        <span className="text-sm font-medium">{title}</span>
+    <section className="w-full py-12 md:py-24 lg:py-32">
+      <div className="container mx-auto text-center">
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-serif mb-8">Socials</h2>
+        <div className="flex justify-center items-center gap-4">
+          {socialLinks.map((link, index) => (
+            <SocialCard
+              key={index}
+              platform={link.platform}
+              url={link.url}
+              imageSrc={link.imageSrc}
+            />
+          ))}
+        </div>
       </div>
-    </Link>
+    </section>
   );
 }

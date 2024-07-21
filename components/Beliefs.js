@@ -8,7 +8,7 @@ export default function Beliefs() {
             When employed judiciously, comparison can yield profound and valuable insights.
           </li>
           <li>
-            Compounding over an extended period of time produces substantial results. However, the joy and
+            Compounding over an extended period of time produces great results. However, the joy and
             fulfillment derived from such achievements surpasses the satisfaction of quick outcomes.
           </li>
         </ul>

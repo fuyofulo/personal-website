@@ -1,7 +1,7 @@
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
 import SocialCard from "./SocialCard";
-import { InstagramIcon, LinkedInIcon, TwitterIcon } from "./Socialicons";
+import { InstagramIcon, LinkedInIcon, TwitterIcon } from "./Socialicons"; 
 
 export default function MainSection() {
   return (
